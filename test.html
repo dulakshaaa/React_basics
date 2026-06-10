@@ -7,7 +7,6 @@
   <body>
     <div class="js-container"></div>
     <div class="div-container"></div>
-    <div class="form-container"></div>
 
     <script src="https://unpkg.com/supersimpledev/react.js"></script>
     <script src="https://unpkg.com/supersimpledev/react-dom.js"></script>
@@ -18,8 +17,6 @@
       const button = <button title="Click me">Click me</button>;
       const p = <p>This is a paragraph.</p>;
       const p2 = <p>This is another paragraph.</p>;
-      const form = <form><input type="text" placeholder="Enter text" /></form>;
-      const div3 = <div>{button} {p} {p2} {form}</div>;
       const div1 = <div>{button} {p}</div>;
       const div2 = <div>{button} {p2}</div>;
 
@@ -29,16 +26,6 @@
 
       const container2 = document.querySelector(".div-container");
       ReactDOM.createRoot(container2).render(div2);
-
-      const container3 = document.querySelector(".form-container");
-      ReactDOM.createRoot(container3).render(div3);
-
-      const button23 = <button title="Click me">Click me</button>;
-      const p23 = <p>This is a paragraph11111111111111111.</p>;
-      const div23 = <div>{button23} {p23}</div>;
-      
-      const container23 = document.querySelector(".js-container");
-      ReactDOM.createRoot(container23).render(div23);
 
 
 
